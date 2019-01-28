@@ -1,0 +1,33 @@
+Test Name:	Untitled.test
+Perform Time:	 11:50 13/09/2009
+
+Block Name:	pure 
+Step Mode:	additive
+Based On:	trials
+Step On:	frequency
+Reference Value:	1440
+Start At:	1400
+Stop At:	0
+Delta:	20
+Inter Stimulus Interval:	100
+Inter Trial Interval:	1000
+Task:	AXB
+Big to Intermediate Steps:	1
+Intermediate to Small Steps:	1
+Small Steps to End:	1
+Total Trials to End:	12
+
+Number	Delta	Correct	T.Int	Res.Int
+1	-40	1	3	3
+2	-40	1	3	3
+3	-40	1	3	3
+4	-20	1	1	1
+5	-20	1	3	3
+6	-20	1	3	3
+7	-10	1	3	3
+8	-10	1	3	3
+9	-10	1	3	3
+
+Mean:	-23.3333
+STD:	13.2288
+

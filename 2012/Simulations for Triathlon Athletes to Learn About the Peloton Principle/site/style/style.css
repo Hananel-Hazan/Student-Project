@@ -1,0 +1,57 @@
+.content {
+	margin-right: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	direction: rtl;
+	font-family: Verdana, Geneva, sans-serif;
+}
+
+.page-header {
+	border-bottom: 1px solid;
+}
+
+.page-footer {
+	border-top: 1px solid;
+	margin-top: 60px;
+	padding-top: 10px;
+}
+
+.page-content {
+	overflow: auto;
+	width: 100%;
+	padding-top: 30px;
+}
+
+.content-box {
+	float: right;
+	width: 40%;
+	margin-left: 10%;
+}
+
+.contact-box {
+	float: right;
+	margin-left: 50px;
+}
+
+p {
+	text-align: justify;
+}
+
+h1 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 25px;
+	font-weight: bold;
+}
+
+h3 {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+li {
+	margin-top: 5px;
+}

@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>HOCR Project site</title>
+<!-- TemplateEndEditable -->
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+<style type="text/css">
+<!--
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #42413C;
+	margin: 0;
+	padding: 0;
+	color: #000;
+	text-align: center;
+	background-image: url(website_files/text-background-thumb16397764.jpg);
+	background-repeat: repeat;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #42413C;
+	text-decoration: underline; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6E6C64;
+	text-decoration: underline;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 1200px;
+	background-color: #FFFF80;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+	background-color: #000000;
+	width: 1200px;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sidebar1 {
+	float: left;
+	width: 180px;
+	background-color: #FFFF80;
+	padding-bottom: 10px;
+}
+.content {
+	padding: 10px 0;
+	width: 1020px;
+	float: left;
+	background-color: #9FF;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol {
+	padding: 0 0 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+ul.nav {
+	list-style: none; /* this removes the list marker */
+	border-top: 1px solid #666; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 15px; /* this creates the space between the navigation on the content below */
+}
+ul.nav li {
+	border-bottom: 1px solid #666; /* this creates the button separation */
+}
+ul.nav a, ul.nav a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 5px 5px 5px 15px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 160px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+	background-color: #C6D580;
+}
+ul.nav a:hover, ul.nav a:active, ul.nav a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+	background-color: #ADB96E;
+	color: #FFF;
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px 0;
+	background-color: #17A3FF;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+	color: #FFF;
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .footer p {
+	font-family: Times New Roman, Times, serif;
+}
+.container .content strong {
+	font-family: Roman, Vivaldi;
+	font-size: 45px;
+	vertical-align: 0%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	float: none;
+	clear: none;
+	z-index: 0;
+	clip: rect(0px,auto,0px,auto);
+	line-height: 80px;
+}
+-->
+</style></head>
+
+<body>
+
+<pre>&nbsp;</pre>
+<div class="container">
+  <div class="header">
+    <table width="1200" height="208" border="1" align="center">
+      <tr>
+        <td width="600" height="202" align="center" valign="middle"> <img src="website_files/logo.png" width="507" height="176" align="middle"></td>
+        <td width="600" align="center" valign="middle"><img src="website_files/headline.jpg" width="610" height="185"></td>
+      </tr>
+    </table>
+  <!-- end .header --></div>
+  <div class="sidebar1">
+    <ul class="nav">
+<li><a href="website_files/HOCR_setup.exe">Download Installer</a></li>
+        <li><a href="website_files/HOCR_source.rar">Download Source code</a></li>
+        <li><a href="website_files/definition of a project.doc">Project definition</a></li>
+        <li><a href="website_files/Developer Manual.pdf">Developer Manual</a></li>
+        <li><a href="website_files/User Manual.pdf">User Manual</a></li>
+        <li><a href="website_files/Tests.pdf">Tests Summary</a></li>
+        <li><a href="website_files/Tests.rar">Test Samples</a></li>
+    </ul>
+    <p> This project was completed in the University of Haifa in 2012 under the guidance of <a href="mailto:hhazan01@cs.haifa.ac.il">Hananel Hazan</a><a href="hhazan01@cs.haifa.ac.il"></a></p>
+    <div class="class1"><a href="website_he.htm"><img src="website_files/is.jpg" width="160" height="95"></a></div>
+    <!-- end .sidebar1 --></div>
+  <div class="content"> <strong>Project Presentation</strong>
+    <p>
+      <object width="601" height="492" align="middle" id="player">
+        <param name="movie" value="http://www.authorstream.com/player.swf?fb=0&nb=1&rl=0&ap=0&pl=as&p=1610988_634902170049373750" />
+        <param name="allowfullscreen" value="true" />
+        <param name="allowScriptAccess" value="always"/>
+        <embed src="http://www.authorstream.com/player.swf?fb=0&nb=1&rl=0&ap=0&pl=as&p=1610988_634902170049373750" width="601" type="application/x-shockwave-flash" height="492" allowscriptaccess="always" allowfullscreen="true" align="middle"></embed>
+      </object>
+    </p>
+    <h2>&nbsp;</h2>
+    <h2>What This Is</h2>
+    <p>This was our University project. We had to upgrade a basic Hebrew OCR program. This program was written in C#.</p>
+    <h2>What This Does</h2>
+    <p>This Program can recognize Hebrew and English characters, both typed and handwritten. It can learn the fonts from your computer or you can teach it your own Handwriting. It can read most image formats as well as PDFs. </p>
+    <h2>Features</h2><div align="left" class="content">
+        <ul>
+          <li>Hebrew and English OCR.</li>
+          <li>Can recognize handwritten and typed text.</li>
+          <li>Can learn any font in your computer.</li>
+          <li>Automatically detects the font the text is written in.</li>
+          <li>Can learn individual handwriting. The more you use it the better it gets.</li>
+          <li>Has various image filters for improving the quality of the text image.</li>
+          <li>Is capable of best aligning the handwritten text for optimal recognition.</li>
+          <li>Can update font information from servers.</li>
+          <li>Can spell-check and correct the results.</li>
+      </ul>
+      </div></p>
+
+
+    <h2>Who We Are    </h2>
+    <p><a href="mailto:alexhef@gmail.com">Alex Hefetz </a></p>
+    <p><a href="mailto:vadim.maizlin@gmail.com">Vadim Maizlin</a></p></p>
+  <!-- end .content --></div>
+  <div class="footer">
+    <h1><strong>Thank You for Visiting us</strong></h1>
+    <h1><strong>Goodbye!</strong></h1>
+  <!-- end .footer --></div>
+  <!-- end .container --></div>
+</body>
+</html>

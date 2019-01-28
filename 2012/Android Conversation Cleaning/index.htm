@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="he" lang="eng" dir="ltr">
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=8" />	
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="ROBOTS" content="ALL" />
+		<meta name="copyright" content="Gidon Appel&Gilad Darmon" />
+		<meta name="description" content="Real-time Spectral Subtraction" />
+		<meta name="keywords" content="Spectral Subtraction,Real-time,Gidon Appel,Gilad Darmon" />	
+		<link rel="stylesheet" href="style.css" type="text/css">
+	</head>
+	<body>
+		<div id="wrapper">	
+			<div id="header" class="frame1">
+				<div class="bg">
+					<div class="inside">
+						<span class="big">Real Time Spectral Subtraction - For Android</span>
+						<span class="small">by Gilad Darmon & Gidon Appel</span>
+					</div>
+				</div>
+				<img src="" alt="" />
+			</div>
+			<div id="content" class="frame1">
+				<div class="row">
+					<div class="cube">
+						<div class="inside">
+							<h1>About the project</h1>
+							<span class="text">
+								Open source software for Android based device,<br/>
+								based on Sipdroid open source, this project is an adaptive noise cancellation software, Real-Time Spectral subtraction.<br>
+								we had no background in DSP or real-time programming. the mathematics in this project is not simple but the implemtentation is.<br>
+								feel free to use it!<br><br>
+								<b><u>We wish to thank:</u></b><br>
+								Mr. Hananel Hazan - Project advisor <br>
+								Mr. Or Goshen - Real-Time Expert <br>
+								Mr. Gilad Cohen - DSP background <br>
+								Mr. Eliziv Cohen - Matalb background
+							<span>
+						</div>
+					</div>
+					<div  class="cube">
+						<div class="inside">
+							<h1>Spectral Subtraction?</h1>
+							<span class="text">
+								A spectral manipulation technique where the absorbances of a reference
+								spectrum are subtracted from the absorbances of a sample spectrum.<br/>
+								The idea is to remove the bands due to the reference material from the sample spectrum.<br/>
+								This is done by simply calculating the difference in absorbance between the two spectra,
+								then plotting this difference versus wavenumber.<br/>
+								The reference spectrum is often multiplied by a subtraction factor so that the reference
+								material bands subtract out properly.
+							<span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div  class="cube">
+						<div class="inside">
+							<h1>Documentation</h1>
+							<span class="text">
+								<ul>
+									<li>
+										<a href="files/documentation.docx">Here</a> you can download the documentation<br/>
+										of the project with explanation about all the classes<br/> and the flow of the program.
+									</li>
+									<li>
+										<a href="files/Suppression of Acoustic Noise in Speech Using Spectral Subtraction - 1979.pdf">Here</a> you can read about the Spectral Subtraction algorithm.
+									</li>
+									<li>
+										<a href="files/Real-time DSP.pdf">Here</a> you can read about Real-time DSP.
+									</li>
+								</ul>
+							<span>
+						</div>
+					</div>
+					<div  class="cube">
+						<div class="inside">
+							<h1>Source Code</h1>
+							<span class="text">
+								<ul>
+									<li>
+										<a href="">Here</a> you can download the source code. 
+									</li>
+									<li>
+										<a href="files/SSBoll79.m">Here</a> you can see the matlab SSBoll79.m source code. 
+									</li>
+									<li>
+										<a href="files/NoiseCancellerTester.zip">Here</a> you can download code for testing. 
+									</li>
+									<li>
+										<a href = "files/testing.rar">Here</a> you can download all the sample files and testing results.
+									</li>
+									<li>
+										<a href = "files/SipUA.apk">Here</a> you can download the apk file and install with apk installer from Google play.
+									</li>
+								</ul>
+							<span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div  class="cube">
+						<div class="inside">
+							<h1>what's next?</h1>
+							<span class="text">
+								<ul>
+									<li>
+										<a href="http://dea.brunel.ac.uk/cmsp/Home_esfandiar/Sample%20Wave%20Files.htm">Here</a> you can find other spectral subtraction algorithms<br/>
+										these are all based on the same idea as Boll's 1979 Spectral Subtraction. <br>
+									</li>
+									<br>
+									<li>
+										developers can implement the rest of the Spectral Subtraction algorithms using our real-time Android spectral subtraction.
+									</li>
+									<br>
+									<li>
+										developers can build an Android app that lets the user choose between the different algorithms, in a VOIP call.
+									</li>
+								</ul>
+							<span>
+						</div>
+					</div>
+			</div>
+		</div>
+	</body>
+</html>
